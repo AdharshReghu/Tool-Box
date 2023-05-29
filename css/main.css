@@ -54,7 +54,66 @@ header{
 
 
 footer{
+    color: white;
     background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+}
+
+footer .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30%;
+    font-style: normal;
+    text-align: center;
+}
+
+
+.details >*{
+    width: 100%;
+}
+
+.details .socialIcons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+footer .creator{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    color: #C7C7C7;
+}
+
+.creatorText{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #3498DB;
+}
+
+.name{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    color: #FF5275;
+}
+
+.internship{
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .logo{
@@ -82,6 +141,23 @@ footer{
 
 .logoText .blueText{
     color: #3498DB;
+}
+.contact
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.email{
+    color:#C7C7C7;
+    font-style: normal;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
 }
 
 
