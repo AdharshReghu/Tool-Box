@@ -1,0 +1,56 @@
+/*css for the home page */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows:1fr 7fr 2fr ;
+}
+
+header{
+    background-color: #FF5275;
+}
+
+.content{
+    background-color: #3498DB;
+}
+
+footer{
+    background-color: #1E1E1E;
+}
+
+.logo{
+    display: flex;
+    border: blue 2px solid;
+    align-items: center;
+}
+
+.logoIcon img{
+    height: 50px;
+    width: 50px;
+}
+
+.logoText{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 44px;
+    margin-left: 10px;
+}
+
+.logoText .whiteText{
+    color: white;
+}
+
+.logoText .blueText{
+    color: #3498DB;
+}
+
+
+
+
