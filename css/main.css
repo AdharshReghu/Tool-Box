@@ -1,4 +1,5 @@
-/*css for the home page */
+/* Home page css starts here */
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -12,17 +13,18 @@ body{
     grid-template-rows:1fr 7fr 2fr ;
 }
 
-header{
-    background-color: #FF5275;
-}
+
+/*content styling starts here*/
 
 .content{
+    position: relative;
     background-color: #3498DB;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 2% 0;
+    z-index: -1;
 }
 
 .content .largeText{
@@ -51,7 +53,9 @@ header{
     line-height: 39px;
     text-align: center;
 }
+/*content styling ends here*/
 
+/*Footer styling starts here*/
 
 footer{
     color: white;
@@ -115,7 +119,30 @@ footer .creator{
     font-weight: 400;
     font-size: 20px;
 }
+.email{
+    font-style: normal;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+}
+.contact
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+/*Footer styling ends here*/
+
+/*header styling starts here*/
+
+header{
+    background-color: #FF5275;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3); ;
+}
 .logo{
     display: flex;
     border: blue 2px solid;
@@ -142,24 +169,6 @@ footer .creator{
 .logoText .blueText{
     color: #3498DB;
 }
-.contact
-{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-.email{
-    color:#C7C7C7;
-    font-style: normal;
-    text-align: center;
-    width: 100%;
-    font-size: 16px;
-    padding: 5px;
-}
-
-
-
+/*header styling ends here*/
 
