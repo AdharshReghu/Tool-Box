@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Inter';
 }
 
 body{
@@ -17,7 +18,40 @@ header{
 
 .content{
     background-color: #3498DB;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0;
 }
+
+.content .largeText{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 116px;
+}
+
+.content .largeText .largeWhiteText{
+    color: white;
+}
+
+.content .largeText .largeRedText{
+    color: #FF5275;
+}
+.about{
+    max-width: 760px;
+}
+
+.aboutText
+{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 39px;
+    text-align: center;
+}
+
 
 footer{
     background-color: #1E1E1E;
@@ -35,7 +69,6 @@ footer{
 }
 
 .logoText{
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
