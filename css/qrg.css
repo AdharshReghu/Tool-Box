@@ -6,10 +6,11 @@
 }
 body{
     background-color:#3498DB;
+    height: 100vh;
 }
 .body{
     display: flex;
-    height: 100vh;
+    height: 90vh;
     justify-content: center;
     align-items: center;
     padding: 10px;
