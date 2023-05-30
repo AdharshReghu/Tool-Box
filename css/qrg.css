@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Inter';
+    
 }
 body{
     background-color:#3498DB;
@@ -10,6 +11,7 @@ body{
     overflow: hidden;
 }
 .body{
+    font-family: 'Hind Siliguri', sans-serif;
     display: flex;
     height: 90vh;
     justify-content: center;
