@@ -47,6 +47,10 @@ ul li{
     margin: 0.5rem;
 }
 
+.logo:hover{
+    cursor: pointer;
+}
+
 .logoIcon img{
     height: 50px;
     width: 50px;

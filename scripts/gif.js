@@ -8,7 +8,9 @@ toggleButton.addEventListener('click',()=>{
 //script for changing background color of content section of the QR generator page 
 const contentBody = document.querySelector('body');
 const logoButton = document.querySelector('.logo');
-console.log(logoButton);
 logoButton.addEventListener('click',()=>{
     contentBody.classList.toggle('darkmode');
 })
+const key = 'LIVDSRZULELA'
+let limit = 10;
+ 
