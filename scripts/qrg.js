@@ -6,8 +6,8 @@ toggleButton.addEventListener('click',()=>{
 })
 
 
-//script for changing background color of content section of the home page 
-const contentBody = document.querySelector('.body');
+//script for changing background color of content section of the QR generator page 
+const contentBody = document.querySelector('body');
 const logoButton = document.querySelector('.logo');
 console.log(logoButton);
 logoButton.addEventListener('click',()=>{
