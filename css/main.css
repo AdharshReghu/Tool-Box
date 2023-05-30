@@ -27,6 +27,10 @@ body{
     z-index: -1;
 }
 
+.darkmode{
+    background-color: grey;
+}
+
 .content .largeText{
     font-style: normal;
     font-weight: 600;
@@ -315,8 +319,22 @@ ul li{
         padding: 0.5rem 1rem;
     }
    
-
-    
-
 }
 
+@media (max-width: 500px){
+    .content{
+        padding: 10px 20px;
+    }
+
+    .content .largeText{
+        font-weight: 600;
+        font-size: 45px;
+    }
+    .aboutText
+    {
+        font-size: 20px;
+    }
+    .logoImageLarge img{
+        width: 180px
+    }
+}
