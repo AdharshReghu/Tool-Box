@@ -135,6 +135,64 @@ footer .creator{
     align-items: center;
 }
 
+@media (max-width: 750px){
+    /*Footer Resposiveness */
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding:10px;
+    }
+
+    footer img{
+        height: 20px;
+        width: 20px;
+    }
+    footer>*{
+        margin: 5px;
+    }
+    footer .creator{
+        width: 100%;
+        order: 0;
+    }
+    footer .details{
+        width: 100%;
+        order: 2;
+    }
+    
+    footer .details>*{
+        margin-bottom: 10px;
+    } 
+
+    footer .contact{
+        width: 100%;
+        order: 1;
+        display: flex;
+        flex-direction: row;
+    }
+    .contact>*{
+        width: fit-content;
+        padding: 2px;
+    }
+    .details .internship{
+        font-size: 16px;
+        font-weight: bold;
+    }
+   .email{
+        font-size: 12px;
+    }
+    .creatorText{
+        font-size: 12px;
+    }
+    .name{
+        font-size: 24px;
+    }
+    .copyright{
+        font-size: 12px;
+    }
+
+}
+
+
 /*Footer styling ends here*/
 
 /*header styling starts here*/
@@ -202,6 +260,6 @@ ul li{
 .logoText .blueText{
     color: #3498DB;
 }
-
 /*header styling ends here*/
+
 
