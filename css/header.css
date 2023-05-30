@@ -1,0 +1,124 @@
+/*header styling starts here*/
+
+header{
+    background-color: #FF5275;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*navigation styling*/
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+    border-radius: 5px;
+}
+
+.navigation li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navigation li .active{
+    color: #1E1E1E;
+}
+
+.navigation li:hover{
+    background-color: #ff7c97;
+}
+
+
+/*Logo styling*/
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.logoIcon img{
+    height: 50px;
+    width: 50px;
+}
+
+.logoText{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 44px;
+    margin-left: 10px;
+}
+
+.logoText .whiteText{
+    color: white;
+}
+
+.logoText .blueText{
+    color: #3498DB;
+}
+
+
+.toggle-button{
+    position: absolute;
+   top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+/*header styling ends here*/
+
+
+@media (max-width: 750px){
+    .toggle-button{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-links{
+        display: none;
+        width: 100%;
+    }
+    nav.activeNav{
+        display: flex;
+    }
+   
+
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    nav li{
+        text-align: center;
+    }
+
+    .navigation li a {
+        padding: 0.5rem 1rem;
+    }
+   
+}
+

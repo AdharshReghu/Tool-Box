@@ -321,6 +321,9 @@ ul li{
    
 }
 
+
+/* content section responsiveness under 500px */
+
 @media (max-width: 500px){
     .content{
         padding: 10px 20px;
