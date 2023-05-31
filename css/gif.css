@@ -88,3 +88,10 @@ form button{
     }
 
 }
+
+@media (max-width: 450px){
+    .gifs{
+        height: auto;
+        width: 150px;
+    }
+}
