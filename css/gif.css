@@ -54,13 +54,13 @@ form button{
 
 
 .container .gifResultBox{
-    padding : 2%;
+    padding : 2% ;
     align-self: center;
     margin: 10px;
     border-radius: 15px;
     background-color: white;
     min-width: none;
-    max-width: 70%;
+    max-width: 80%;
     height: fit-content;
 }
 
