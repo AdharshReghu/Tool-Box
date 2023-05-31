@@ -98,9 +98,19 @@ form button{
 
 }
 
-@media (max-width: 450px){
+@media (max-width: 475px){
     .gifs{
         height: auto;
         width: 100%;
     }
+    .gifResultBox{
+        min-width: 95%;
+    }
+
+    .gifContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

@@ -26,6 +26,7 @@ searchButton.addEventListener('click',getGifs)
 
 async function getGifs(e){
     e.preventDefault();
+    gifContainer.replaceChildren();
     const term = input.value;
     if(!term)
     {
