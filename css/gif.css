@@ -47,7 +47,8 @@ form input:focus{
 form button{
     background-color: #FF5275;
     color: white;
-    width: 80px;
+    width: fit-content;
+    padding: 5px;
     border-radius: 8px;
     margin-left: 10px;
 }
@@ -55,14 +56,21 @@ form button{
 
 .container .gifResultBox{
     padding : 2% ;
+    display: none;
     align-self: center;
     margin: 10px;
     border-radius: 15px;
     background-color: white;
     min-width: none;
     max-width: 80%;
-    height: fit-content;
+    height:fit-content;
 }
+
+.gifResultBox.gifActive{
+    transition: height 0.5s ease-in;
+    display: block;
+}
+
 
 @media (max-width: 750px){
     .container .gifResultBox{
@@ -86,6 +94,7 @@ form button{
         margin: 2px;
         margin-left: 0;
     }
+
 
 }
 
