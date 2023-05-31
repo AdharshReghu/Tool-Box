@@ -12,5 +12,5 @@ logoButton.addEventListener('click',()=>{
     contentBody.classList.toggle('darkmode');
 })
 const key = 'LIVDSRZULELA'
-let limit = 10;
+let limit = 20; //20 is still the default value as mentioned in the tenor api documentation
  
