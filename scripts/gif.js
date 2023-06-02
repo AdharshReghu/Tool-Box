@@ -14,7 +14,7 @@ logoButton.addEventListener('click',()=>{
 const key = 'LIVDSRZULELA'
 let limit = 20; //20 is still the default value as mentioned in the tenor api documentation
 const url = 'https://g.tenor.com/v1/search?'
-// URL sample : "https://g.tenor.com/v1/search?q=excited&key=LIVDSRZULELA&limit=8"
+
 
 
 const input = document.querySelector('form input');
@@ -33,11 +33,15 @@ async function getGifs(e){
         gifResultBox.classList.remove('gifActive')
         return;
     }
-    const response =  await fetch(`${url}q=${term}&key=${key}&limit=${20}`).then((response)=>{
+    const response =  await fetch(`${url}q=${term}&key=${key}&limit=${limit}`).then((response)=>{
         return response.json();
     }).then((data)=>{
         const gifArrayData = data.results
         let i = 0;
+        if(gifArrayData.length==0)
+        {
+            return;
+        }
         gifResultBox.classList.add('gifActive');
         while(i<gifArrayData.length)
         {
