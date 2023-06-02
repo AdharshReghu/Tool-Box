@@ -30,7 +30,6 @@ async function getImages(e){
     const searchValue = input.value;
     if(!searchValue)
     {
-        imageResultBox.classList.remove('imageActive');
         return;
     }
     fetch(`${url}?key=${api_key}&q=${searchValue}&per_page=50`).then((Response)=>{
@@ -38,8 +37,10 @@ async function getImages(e){
     }).then((data)=>{
         const imageArray = data.hits;
         let i = 0;
-        if(imageArray.length==0)
+        console.log(imageArray.length)
+        if(imageArray.length===0)
         {
+            imageResultBox.classList.remove('imageActive');
             return;
         }
         imageResultBox.classList.add('imageActive');
@@ -54,6 +55,8 @@ async function getImages(e){
         }
     }).catch((e)=>{
         console.log(e + " error");
+        
+        imageResultBox.classList.remove('imageActive')
     })
 
 }

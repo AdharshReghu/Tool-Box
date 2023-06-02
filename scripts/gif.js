@@ -38,8 +38,9 @@ async function getGifs(e){
     }).then((data)=>{
         const gifArrayData = data.results
         let i = 0;
-        if(gifArrayData.length==0)
+        if(gifArrayData.length===0)
         {
+            gifResultBox.classList.remove('gifActive');
             return;
         }
         gifResultBox.classList.add('gifActive');
@@ -52,6 +53,10 @@ async function getGifs(e){
             gifContainer.append(img);
             i++;
         }
+    }).catch((e)=>
+    {
+        console.log(e + ' error occured');
+        gifResultBox.classList.add('gifActive');
     })
 }
 
