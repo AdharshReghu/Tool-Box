@@ -54,15 +54,23 @@ form button{
 }
 
 .container .videoResultBox{
+    display: none;
     padding : 2% ;
     align-self: center;
     margin: 0px;
+    margin-top: 0.7rem;
     border-radius: 15px;
     background-color: white;
     min-width: none;
     max-width: 80%;
     overflow-y: auto;
 }
+
+.videoResultBox.videoActive{
+    transition: height 0.5s ease-in;
+    display: block;
+}
+
 
 .videoResultBox::-webkit-scrollbar-track
 {
@@ -92,13 +100,12 @@ form button{
     align-items: center;
 }
 
-.video{
+.videos{
     max-width: 80%;
 }
 
 .buttons{
     display: flex;
-    border: 2px blue solid;
     width: 20%;
     justify-content: space-around;
     margin-top: 1rem;
