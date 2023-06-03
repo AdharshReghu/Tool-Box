@@ -1,5 +1,5 @@
 # Tool-Box
-website with a collection of different useful functionalities such as qr-code generator,image searcher,gif searcher and latest technological news
+website with a collection of different useful functionalities such as qr-code generator,image searcher,gif searcher and video searcher
 
 
 ----TOOL-BOX----
