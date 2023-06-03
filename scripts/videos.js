@@ -98,7 +98,7 @@ function nextVideo(){
         console.log(source);
         videos.append(source);
         videos.load();
-        if(i=numberOfVideos-1)
+        if(i===numberOfVideos-1)
         {
             nextButton.disabled=true;
             nextButton.classList.add('disabledButtonColor');
