@@ -5,6 +5,8 @@
     font-family: 'Inter';
 }
 
+
+
 body{
     background-color: #3498DB;
 }
@@ -123,6 +125,10 @@ button{
     border: none;
 }
 
+.disabledButtonColor{
+    background-color: grey;
+}
+
 @media (max-width: 750px){
     form{
         flex-direction: column;
@@ -151,4 +157,5 @@ button{
         max-width: 100%;
     }
 }
+
 
