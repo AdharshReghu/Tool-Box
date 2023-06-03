@@ -38,6 +38,9 @@ async function getVideo(e){
     i=0;
     numberOfVideos=0;
     videoArray=undefined;
+    previousButton.disabled=true;
+    nextButton.disabled=false;
+    nextButton.classList.remove('disabledButtonColor');
     if(!inputValue)
     {
         console.log('input value is empty')
@@ -53,8 +56,6 @@ async function getVideo(e){
         videoResultBox.classList.remove('videoActive');
         return;
     }
-    previousButton.disabled=true;
-    nextButton.disabled=false;
     previousButton.classList.add('disabledButtonColor');
     if(numberOfVideos===1)
     {
